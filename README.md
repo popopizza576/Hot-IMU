@@ -18,6 +18,16 @@ The Hot IMU is a compact ESP-32c3-based device, with a BNO085 IMU and OLED scree
 
 <img width="1395" height="568" alt="Screenshot 2026-05-08 005708" src="https://github.com/user-attachments/assets/7cb6f70e-37ae-472f-b768-d3b1ab18f5b9" />
 
+### BOM
+
+You can access my BOM <a href="https://github.com/popopizza576/Hot-IMU/blob/main/BOM.csv">here</a>
+
+All parts are sourced through Digikey, total being around $25 not including PCB or shipping. 
+
+**NOTE**
+
+To build this, you must have access to a 3D Printer and self-tapping M2 screws.
+
 # Usage
 The Hot IMU records movement data to the SD card in CSV format. It records one frame of motion data per frame, and the framerate is specified on the OLED screen.
 
