@@ -7,6 +7,10 @@ The Hot IMU is a great alternative to current Vive-tracker-based solutions for g
 
 The Hot IMU is also incredibly affordable compared to the current Vive-tracker-based solutions. It's also extremely affordable, not requiring base stations, which means you can use it virtually anywhere!
 
+# Zine Page
+
+WIP
+
 # Assembly
 The Hot IMU is a compact ESP-32c3-based device, with a BNO085 IMU and OLED screen. The IMU and OLED screen mount to the PCB with breadboard pins. The battery mounts using a JST 2-pin 1.5mm connector.
 
