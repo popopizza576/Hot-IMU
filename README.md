@@ -1,5 +1,5 @@
 # What is Hot IMU?
-The Hot IMU is an IMU based camera tracker that attaches to any hot or cold shoe on a camera. It helps to create dynamic backgrounds for compositing green screens instead of static still images.
+The Hot IMU is an IMU based camera tracker that attaches to any hot or cold shoe on a camera and captures its movement in 3D space. This helps to create dynamic backgrounds using that movement data for compositing green screens instead of static images, which adds a whole new realm of possibilities to what you can do in video post-production and VFX!
 <img width="1920" height="720" alt="github" src="https://github.com/user-attachments/assets/01b7f6c6-6e00-4b36-9539-d618ba0f1045" />
 
 # Why use Hot IMU?
@@ -9,7 +9,8 @@ The Hot IMU is also incredibly affordable compared to the current Vive-tracker-b
 
 # Zine Page
 
-WIP
+<img width="1398" height="2000" alt="hot IMU" src="https://github.com/user-attachments/assets/d5f9d178-13bb-4bbe-b212-715c44600895" />
+
 
 # Assembly
 The Hot IMU is a compact ESP-32c3-based device, with a BNO085 IMU and OLED screen. The IMU and OLED screen mount to the PCB with breadboard pins. The battery mounts using a JST 2-pin 1.5mm connector.
