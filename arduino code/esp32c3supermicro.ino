@@ -13,7 +13,7 @@
 #include "SD.h"
 //serial
 #include "SPI.h"
-
+//does something with the BNO085 (i dont know i just work here)
 #define BNO08X_RESET -1
 
 //defines the motion tracker
@@ -79,12 +79,16 @@ unsigned long elapsed = 0;
 String csvString;
 
 void setup() {
+    //stuff for the power rail, because it has a power button
     pinMode(powerRailPin, OUTPUT);
     digitalWrite(powerRailPin, HIGH);
+
+    //serial console stuff
     Serial.begin(115200);
     delay(1000);
     Serial.println("Booted");
 
+    //more stuff for the power button feature
       esp_deep_sleep_enable_gpio_wakeup(1 << WAKEUP_GPIO, ESP_GPIO_WAKEUP_GPIO_HIGH);
 
 
@@ -97,7 +101,6 @@ void setup() {
     gravityConst = 11;
 
     // combine TC values
-
     fullTimeCodeString = hoursTC + ":"; 
     fullTimeCodeString = fullTimeCodeString + minutesTC;
     fullTimeCodeString = fullTimeCodeString + ":";
@@ -110,7 +113,7 @@ void setup() {
         Serial.println("SSD1306 allocation failed");
         for (;;);
     }
-
+  //SD card mounting and stuff
   SPI.begin(SD_SCLK, SD_MISO, SD_MOSI, SD_CS);
   if (!SD.begin(SD_CS)) 
   {
@@ -122,7 +125,7 @@ void setup() {
 
 
 
-
+    //THIS STUFF IS FROM WHEN I HAD AN MPU6050 AS A MOTION TRACKER --  DO NOT USE
 
     //initialize motion tracker
     //if (!mpu.begin()) {
@@ -142,15 +145,16 @@ void setup() {
 
   setReports();
 
-  // set accelerometer range to +-8G
-  mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
+  // set accelerometer range to +-8G -- MPU6050 doesnt matter
+  //mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
 
-  // set gyro range to +- 500 deg/s
-  mpu.setGyroRange(MPU6050_RANGE_2000_DEG);
+  // set gyro range to +- 500 deg/s -- MPU6050 doesnt matter
+  //mpu.setGyroRange(MPU6050_RANGE_2000_DEG);
 
-  // set filter bandwidth to 21 Hz
-  mpu.setFilterBandwidth(MPU6050_BAND_5_HZ);
+  // set filter bandwidth to 21 Hz -- MPU6050 doesnt matter
+  //mpu.setFilterBandwidth(MPU6050_BAND_5_HZ);
 
+  //updates the OLED display
   delay(100);
 
     display.clearDisplay();  // Clear buffer
@@ -169,7 +173,7 @@ void setup() {
     display.display(); // Show text on screen
 }
 
-
+//stuff for BNO085 (good :>)
 void setReports(void) {
   Serial.println("Setting desired reports");
 
@@ -280,6 +284,7 @@ void loop() {
 
 }
 
+//does the thing that says "Recording" and blinks on the screen
 void recordDisplayLogic() {
     if (msTimeTrack - recBlinkMs >= 1000) {
       recBlinkMs = msTimeTrack;
@@ -292,6 +297,7 @@ void recordDisplayLogic() {
 
 }
 
+//updates timecode values as time goes on
 void updateTimeCodeLogic() {
     //uses millis as a reference for frames (but it do a lotta rounding cuz integers)
 
@@ -345,6 +351,7 @@ void updateTimeCodeLogic() {
 
 }
 
+//updates the timecode string from the timecode values
 void updateTimeCodeString() {
     //updates timecode stuff
 
@@ -390,6 +397,7 @@ void updateTimeCodeString() {
 
 }
 
+//mpu6050 doesnt matter blehhhh
 void mpu6050Update() {
   sensors_event_t a, g, temp;
   mpu.getEvent(&a, &g, &temp);
@@ -401,6 +409,7 @@ void mpu6050Update() {
   zGyro = g.gyro.z;
 }
 
+//bno085 does matter! :D
 void bno085Update() {
 
   if (bno08x.wasReset()) {
@@ -427,11 +436,10 @@ void bno085Update() {
     }
   }
 
-  //csvString = String(xAcceleration) + "," + String(yAcceleration) + "," + String(zAcceleration) + "," + String((xGyro - gyroXOffset)) + "," + String((yGyro - gyroYOffset)) + "," + String((zGyro - gyroZOffset));
-  //Serial.println(csvString);
 
 }
 
+//updates the motion data to the SD card
 void printMotionData() {
 
 
@@ -441,6 +449,7 @@ void printMotionData() {
   
 }
 
+//updates the OLED
 void updateScreen() {
   // updating the display stuff
   display.clearDisplay();  // Clear buffer
@@ -509,6 +518,7 @@ gyroZOffset = sumZ/numPoints;
 normalScreen = true;
 }
 
+//makes sure that files have new names in the SD card
 void findFileName () {
   lazyCounter = 0;
   while (true) {
