@@ -27,6 +27,12 @@ cam.animation_data_clear()
 xAcceleration = 0
 yAcceleration = 0
 zAcceleration = 0
+velocityX = 0
+velocityY = 0
+velocityZ = 0
+
+
+
 
 xRotation = 90 * rotationMath
 yRotation = 0
@@ -79,8 +85,8 @@ with open(filePath, 'r') as file:
         xList.append(row[0])
         yList.append(row[1])
         zList.append(row[2])
-        xGyroList.append(row[3])
-        yGyroList.append(row[4])
+        yGyroList.append(row[3])
+        xGyroList.append(row[4])
         zGyroList.append(row[5])
         frameAmount += 1
         
@@ -101,17 +107,15 @@ for i in range(0, int(frameAmount)):
     xRotation = float(xGyroList[i])
     yRotation = float(yGyroList[i])
     zRotation = float(zGyroList[i])
-    cam.location.x = cam.location.x + xAcceleration
-    cam.location.y = cam.location.y + yAcceleration
-    cam.location.z = cam.location.z + zAcceleration
+    #velocityX += xAcceleration * timePerFrame
+    #velocityY += yAcceleration * timePerFrame
+    #velocityZ += zAcceleration * timePerFrame
+    #cam.location.x += velocityX * timePerFrame
+    #cam.location.y += velocityY * timePerFrame
+    #cam.location.z += velocityZ * timePerFrame
     cam.rotation_euler.x = cam.rotation_euler.x + (xRotation * timePerFrame)
     cam.rotation_euler.y = cam.rotation_euler.y + (yRotation * timePerFrame)
     cam.rotation_euler.z = cam.rotation_euler.z + (zRotation * timePerFrame)
-    cam.location.x = cam.location.x / 10
-    cam.location.y = cam.location.y / 10
-    cam.location.z = cam.location.z / 10
     print(currentLine)
     cam.keyframe_insert("location", frame=i)
     cam.keyframe_insert("rotation_euler", frame=i)
-    
-    
