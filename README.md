@@ -34,7 +34,9 @@ All parts are sourced through Digikey, total being around $25 not including PCB 
 To build this, you must have access to a 3D Printer and self-tapping M2 screws.
 
 Alongside this, parts not included in the BOM include:
+
 BNO085 module (available on AliExpress)
+
 0.91-inch i2c OLED Display Module (available on AliExpress)
 
 # Usage
