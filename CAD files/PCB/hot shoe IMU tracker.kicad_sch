@@ -4978,6 +4978,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "TPB4056A20-ES1R"
+			(at 60.96 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "717a742e-4567-438c-9392-e5343ac9a14b")
 		)
@@ -5069,6 +5078,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "CRCW080510K0FKEA"
+			(at 140.97 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f41261f7-b70a-4f9e-8e98-b984c52b4ddf")
 		)
@@ -5131,6 +5149,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 73.66 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CRCW08051K20FKEA"
 			(at 73.66 50.8 0)
 			(effects
 				(font
@@ -5202,6 +5229,15 @@
 		)
 		(property "Description" "USB Micro Type B connector"
 			(at 88.9 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0475900001"
+			(at 88.9 17.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5281,6 +5317,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 130.81 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RS-282G05A3-SM RT"
 			(at 130.81 107.95 0)
 			(effects
 				(font
@@ -5478,6 +5523,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "26892"
+			(at 179.07 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3.3"
 			(uuid "5a8e9ac9-88be-4cee-a670-fd2c903e61e5")
 		)
@@ -5588,6 +5642,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "1040310811"
+			(at 247.65 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "1af92144-ebc1-4403-95aa-ecb5775490eb")
 		)
@@ -5679,6 +5742,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "SSM-104-L-SV-K-TR"
+			(at 229.87 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "87aa1aee-e256-432f-b864-e999620c4dde")
 		)
@@ -5755,6 +5827,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "B2B-ZR-SM4-TF"
+			(at 86.36 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "13b53177-c386-4aec-97c5-05b94d457dfe")
 		)
@@ -5816,6 +5897,15 @@
 		)
 		(property "Description" "Generic connector, single row, 01x10, script generated"
 			(at 104.14 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SSM-104-L-SV-K-TR"
+			(at 104.14 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5983,6 +6073,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "CRCW080510K0FKEA"
+			(at 125.73 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "544ad5f5-243e-4855-925f-60b132de00fd")
 		)
@@ -6119,6 +6218,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "GRM155R61A106ME11D"
+			(at 222.25 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8ece8ddb-bc45-4764-9e54-e6f11148afdd")
 		)
@@ -6183,6 +6291,15 @@
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
 			(at 140.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "2N7002"
+			(at 140.97 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6263,6 +6380,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RCWP0575400RGKS6"
+			(at 60.96 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "75af3c56-8535-4701-bfd2-b018fa2978e4")
 		)
@@ -6323,6 +6449,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 116.84 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RS-282G05A3-SM RT"
 			(at 116.84 107.95 0)
 			(effects
 				(font
@@ -6410,6 +6545,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "LTST-C170KRKT"
+			(at 41.91 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d7d955b9-9410-4842-ad4e-e893ad1d50ff")
 		)
@@ -6472,6 +6616,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 35.56 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CRCW08051K00FKEA"
 			(at 35.56 36.83 0)
 			(effects
 				(font
@@ -6559,6 +6712,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "LTST-C171KGKT"
+			(at 35.56 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "11446eb2-89ef-453b-8cad-e45b86653b4b")
 		)
@@ -6621,6 +6783,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 220.98 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CRCW080510K0FKEA"
 			(at 220.98 46.99 0)
 			(effects
 				(font
@@ -6699,6 +6870,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "GRM155R71C104KA88D"
+			(at 223.52 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d0168d40-59bc-4344-966f-c11a16c37362")
 		)
@@ -6761,6 +6941,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 41.91 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CRCW08051K00FKEA"
 			(at 41.91 36.83 0)
 			(effects
 				(font
@@ -6837,6 +7026,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RS-282G05A3-SM RT"
+			(at 146.05 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e6ee8789-51af-478f-bab3-2c7821f86904")
 		)
@@ -6899,6 +7097,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 111.76 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CRCW080510K0FKEA"
 			(at 111.76 96.52 0)
 			(effects
 				(font
