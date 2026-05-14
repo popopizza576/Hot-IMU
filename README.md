@@ -27,7 +27,9 @@ The Hot IMU is a compact ESP-32c3-based device, with a BNO085 IMU and OLED scree
 ### BOM
 
 I have created two separate BOMs for my project, because some parts you can't order on Digikey. 
+
 The first BOM plugs into Digikeys' lists and allows you to order things like SMD components for your board.
+
 The second BOM is a list of all additional components you need to buy in order to complete the project.
 
 **You need to buy the contents of BOTH BOMs to build this project!!!**
