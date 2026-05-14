@@ -32,7 +32,7 @@ The second BOM is a list of all additional components you need to buy in order t
 
 **You need to buy the contents of BOTH BOMs to build this project!!!**
 
-<a href="https://github.com/popopizza576/Hot-IMU/blob/main/BOM.csv">BOM1</a>
+<a href="https://github.com/popopizza576/Hot-IMU/blob/main/BOM.csv">BOM1</a><br></br>
 <a href="https://github.com/popopizza576/Hot-IMU/blob/main/BOM2.csv">BOM2</a>
 
 **PLEASE NOTE**
