@@ -26,19 +26,19 @@ The Hot IMU is a compact ESP-32c3-based device, with a BNO085 IMU and OLED scree
 
 ### BOM
 
-You can access my BOM <a href="https://github.com/popopizza576/Hot-IMU/blob/main/BOM.csv">here</a>
+I have created two separate BOMs for my project, because some parts you can't order on Digikey. 
+The first BOM plugs into Digikeys' lists and allows you to order things like SMD components for your board.
+The second BOM is a list of all additional components you need to buy in order to complete the project.
 
-All parts are sourced through Digikey, total being around $25 not including PCB or shipping. 
+**You need to buy the contents of BOTH BOMs to build this project!!!**
 
-**NOTE**
+<a href="https://github.com/popopizza576/Hot-IMU/blob/main/BOM.csv">BOM1</a>
+<a href="https://github.com/popopizza576/Hot-IMU/blob/main/BOM2.csv">BOM2</a>
 
-To build this, you must have access to a 3D Printer and self-tapping M2 screws.
+**PLEASE NOTE**
 
-**Alongside this, parts not included in the BOM include:**
-
-BNO085 module (available on AliExpress)
-
-0.91-inch i2c OLED Display Module (available on AliExpress)
+In addition to purchasing the parts from the BOM, you must have access to a 3D Printer to print the shell for this project.
+Also, note that you need to get a quote from a PCB manufacturer of your choosing. **YOU MUST PURCHASE A PCB** The PCB is not included in either BOM.
 
 # Usage
 The Hot IMU records movement data to the SD card in CSV format. It records one frame of motion data per frame, and the framerate is specified on the OLED screen.
