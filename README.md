@@ -1,5 +1,5 @@
 # What is Hot IMU?
-The Hot IMU is an IMU based camera tracker that attaches to any hot or cold shoe on a camera and captures its movement in 3D space. This helps to create dynamic backgrounds using that movement data for compositing green screens instead of static images, which adds a whole new realm of possibilities to what you can do in video post-production and VFX!
+The Hot IMU is an IMU based camera tracker that attaches to any hot or cold shoe on a camera and captures its movement. This helps to create dynamic backgrounds using that movement data for compositing green screens instead of static images, which adds a whole new realm of possibilities to what you can do in video post-production and VFX!
 ### <a href="https://youtu.be/kCqcRCQPGMA">Watch the video here!</a>
 <img width="1920" height="720" alt="github" src="https://github.com/user-attachments/assets/01b7f6c6-6e00-4b36-9539-d618ba0f1045" />
 <img width="1920" height="720" alt="ezgif-frame-" src="https://github.com/user-attachments/assets/8a046f85-85d8-4d56-8b77-864e3366f09a" />
